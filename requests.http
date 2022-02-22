@@ -1,0 +1,75 @@
+###
+POST http://localhost:3000/dashboard/client HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "otro",
+    "lastname": "diferente",    
+    "address":{
+        "city":"lyon",
+        "street":"street",
+        "lat":15,
+        "length":45
+    },
+    "acount_bank":"jsp"
+}
+
+###
+GET http://localhost:3000/dashboard/clients HTTP/1.1
+
+###
+
+GET http://localhost:3000/dashboard/clients/621442ffe9b192f2712872c9  HTTP/1.1
+
+###
+
+DELETE http://localhost:3000/dashboard/clients/6214402eb82bb72d12722b55  HTTP/1.1
+
+###
+PUT http://localhost:3000/dashboard/clients/621442ffe9b192f2712872c9  HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "gfhhd",
+       
+    "address":{
+        "city":"lyon",
+        "street":"street",
+        "lat":15
+        
+    },
+    "acount_bank":"jsp"
+}
+
+###
+POST http://localhost:3000/dashboard/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "prodcut":"perfume",
+    "img":"surlaweb.com",
+    "price": 3000,
+    "cant": 3,
+    "state":true
+}
+
+###
+GET http://localhost:3000/dashboard/products HTTP/1.1
+
+###
+
+GET http://localhost:3000/dashboard/products/62146da622fef4378404ddbe  HTTP/1.1
+
+###
+
+DELETE http://localhost:3000/dashboard/products/62146da622fef4378404ddbe  HTTP/1.1
+
+###
+PUT http://localhost:3000/dashboard/products/62146da622fef4378404ddbe  HTTP/1.1
+Content-Type: application/json
+
+{
+    "prodcut":"pomme",    
+    "price": 400
+    
+}
